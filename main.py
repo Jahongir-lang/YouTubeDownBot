@@ -1,13 +1,11 @@
 import os
 import telebot
 import threading
-
+from dotenv import load_dotenv
 from modules import checker, myqueues 
 
-from dotenv import load_dotenv 
 load_dotenv()
-
-TOKEN = os.getenv("7562005998:AAGkFHEXIBukyT3beZyN4E662HE0Xa8cuEw")
+TOKEN = os.getenv("API_TOKEN")
 
 bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
                       
